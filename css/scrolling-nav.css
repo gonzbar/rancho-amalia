@@ -63,8 +63,7 @@ of those sections to manage the look and feel of the site. */
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding: 100px 0;
     background: #E2DED3;
 }
 
@@ -82,7 +81,6 @@ of those sections to manage the look and feel of the site. */
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-
 }
 
 .btn-circle {
