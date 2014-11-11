@@ -47,6 +47,13 @@ of those sections to manage the look and feel of the site. */
     background-size: cover;
     -o-background-size: cover;
 }
+@media(max-width:767px) {
+
+    .intro-section {
+        background: url(../images/front-cover-768.JPG) no-repeat center center scroll;
+    }
+
+}
 
 .about-section {
     height: 100%;
@@ -79,6 +86,9 @@ of those sections to manage the look and feel of the site. */
     color: #fff;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    position:absolute;
+    bottom:20px;
+    width: 100%;
 }
 
 .text-vertical-center h1 {
@@ -86,6 +96,7 @@ of those sections to manage the look and feel of the site. */
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+
 }
 
 .btn-circle {
