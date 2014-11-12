@@ -1,14 +1,25 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html lang="en">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+{% include head.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-</div>
+{% include page-header.html %}
+
+
+{{ content }}
+
+
+{% include footer.html %}
+<!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>
+</body>
+
+</html>
+
