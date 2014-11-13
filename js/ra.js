@@ -1,15 +1,6 @@
 ---
 ---
 
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -53,7 +44,7 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image =new google.maps.MarkerImage('{{ "/images/logo.png" | prepend: site.baseurl }}', null, null, null, new google.maps.Size(21,30));
+    var image =new google.maps.MarkerImage('{{ "/images/logo-small.png" | prepend: site.baseurl }}', null, null, null, new google.maps.Size(21,23));
     var myLatLng = new google.maps.LatLng(10.171586,-84.376975);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,

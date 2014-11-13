@@ -17,7 +17,6 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
 }
 
 html {
@@ -36,14 +35,28 @@ html {
     .top-nav-collapse {
         padding: 0;
     }
+}
 
+.page-body {
+    display: none;
+}
 
-
+.navbar-default {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.8);
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
+
+header .intro-heading {
+    font-size: 400%;
+}
+
+header .intro-subheading {
+    font-style: italic;
+    font-weight: 200;
+}
 
 .intro-section {
     display: table;
@@ -73,9 +86,15 @@ of those sections to manage the look and feel of the site. */
 
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
+section .section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section .section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-style: italic;
 }
 
 .about-section {
@@ -107,17 +126,13 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     vertical-align: middle;
     color: #fff;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
     width: 100%;
 }
 
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-
 }
 
 .btn-circle {
@@ -194,18 +209,14 @@ of those sections to manage the look and feel of the site. */
     }
 }
 
-section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
+#map {
+    height: 500px;
 }
 
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
+@media(max-width:768px) {
+    #map {
+        height: 100%;
+    }
 }
 
 /* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
