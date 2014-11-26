@@ -252,3 +252,14 @@ section .section-subheading {
     -o-background-size: cover;
 }
 
+.img-container {
+    width: 150px;
+    height: 150px;
+}
+
+/* resize images */
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+

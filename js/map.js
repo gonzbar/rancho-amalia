@@ -1,18 +1,6 @@
 ---
 ---
 
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
@@ -44,7 +32,7 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image =new google.maps.MarkerImage('{{ "/images/logo-small.png" | prepend: site.baseurl }}', null, null, null, new google.maps.Size(21,23));
+    var image =new google.maps.MarkerImage('{{site.baseurl}}/images/logo-small.png', null, null, null, new google.maps.Size(21,23));
     var myLatLng = new google.maps.LatLng(10.171586,-84.376975);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,

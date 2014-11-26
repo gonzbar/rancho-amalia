@@ -1,18 +1,15 @@
 <!-- jQuery Version 1.11.0 -->
-<script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+<script src="{{site.baseurl}}/js/jquery-1.11.0.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
 
 <!-- Scrolling Nav JavaScript -->
-<script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-
-
+<script src="{{site.baseurl}}/js/jquery.easing.min.js"></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-<script src="{{ "/js/ra.js" | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -20,4 +17,15 @@
         body.css("display", "none");
         body.fadeIn(500);
     });
+
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
 </script>
+
