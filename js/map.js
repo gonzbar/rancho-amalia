@@ -13,7 +13,7 @@ function init() {
         zoom: 13,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(10.171586,-84.376975), // Rancho Amalia
+        center: new google.maps.LatLng(10.171627, -84.378571), // Rancho Amalia
 
         // Disables the default Google Maps UI components
         disableDefaultUI: false,
@@ -33,7 +33,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image =new google.maps.MarkerImage('{{site.baseurl}}/images/logo-small.png', null, null, null, new google.maps.Size(21,23));
-    var myLatLng = new google.maps.LatLng(10.171586,-84.376975);
+    var myLatLng = new google.maps.LatLng(10.171627, -84.378571);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
